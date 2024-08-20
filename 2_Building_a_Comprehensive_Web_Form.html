@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms Assignment 1</title>
+    </head>
+    <body>
+        <form action="/input" method="post">
+            <fieldset>
+                <legend>Favorite Programming Language</legend>
+                <label for="language">Choose your favorite Programming Language:</label>
+
+                <select name="language" id="language" aria-label="Choose your favorite Programming Language from the provided options">
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="R">R</option>
+                    <option value="BASIC">BASIC</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Proficiency</legend>
+                <label>Please choose your proficiency:</label>
+                <input type="radio" id="beginner" name="proficiency" value="beginner">
+                <label for="beginner">Beginner</label>
+                <input type="radio" id="intermediate" name="proficiency" value="intermediate">
+                <label for="intermediate">Intermediate</label>
+                <input type="radio" id="advanced" name="proficiency" value="advanced">
+                <label for="advanced">Advanced</label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferred Development Platform</legend>
+                <label for="web">Web</label>
+                <input type="checkbox" id="web" name="web" value="no">
+                
+                <label for="mobile">Mobile</label>
+                <input type="checkbox" id="mobile" name="mobile" value="no">
+
+                <label for="desktop">Desktop</label>
+                <input type="desktop" id="desktop" name="desktop" value="no">
+            </fieldset>
+        </form>
+    </body>
+</html>
