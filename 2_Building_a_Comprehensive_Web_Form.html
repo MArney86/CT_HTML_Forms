@@ -5,10 +5,11 @@
     </head>
     <body>
         <form action="/input" method="post">
-            <fieldset>
-                <legend>Favorite Programming Language</legend>
+            <div role="group" aria-labelledby="groupLabel">
+                <div id="groupLabel">
+                    <h4>What is your favorite programming language?</h4> 
+                </div> 
                 <label for="language">Choose your favorite Programming Language:</label>
-
                 <select name="language" id="language" aria-label="Choose your favorite Programming Language from the provided options">
                     <option value="Java">Java</option>
                     <option value="C">C</option>
@@ -18,19 +19,26 @@
                     <option value="R">R</option>
                     <option value="BASIC">BASIC</option>
                 </select>
-            </fieldset>
-            <fieldset>
-                <legend>Proficiency</legend>
-                <label>Please choose your proficiency:</label>
+            </div>
+            <br>
+            <div role="group" aria-labelledby="groupLabel">
+                <div id="groupLabel">
+                    <h4>Please choose your proficiency level</h4>
+                </div>
+                <label>Please choose your proficiency level:</label>
                 <input type="radio" id="beginner" name="proficiency" value="beginner">
                 <label for="beginner">Beginner</label>
                 <input type="radio" id="intermediate" name="proficiency" value="intermediate">
                 <label for="intermediate">Intermediate</label>
                 <input type="radio" id="advanced" name="proficiency" value="advanced">
                 <label for="advanced">Advanced</label>
-            </fieldset>
-            <fieldset>
-                <legend>Preferred Development Platform</legend>
+            </div>
+            <br>
+            <div role="group" aria-labelledby="groupLabel">
+                <div id="groupLabel">
+                    <h4>"What is your preferred development platform?"</h4>
+                </div>
+
                 <label for="web">Web</label>
                 <input type="checkbox" id="web" name="web" value="no">
                 
@@ -38,8 +46,8 @@
                 <input type="checkbox" id="mobile" name="mobile" value="no">
 
                 <label for="desktop">Desktop</label>
-                <input type="desktop" id="desktop" name="desktop" value="no">
-            </fieldset>
+                <input type="checkbox" id="desktop" name="desktop" value="no">
+            </div>
         </form>
     </body>
 </html>
